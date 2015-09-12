@@ -14,7 +14,7 @@ define([
     "use strict";
     var ArtView = Backbone.View.extend({
       el: ".entry",
-      template: Handlebars.compile($("#entry-template").html()),
+      template: Handlebars.compile(jQuery("#entry-template").html()),
       render: function() {
         this.$el.html(this.template(this.model.toJSON()));
         return this;

@@ -13,8 +13,8 @@ define([
     'js/views/art_view'
 ], function ($, _, Backbone, artModel, ArtView) {
     "use strict";
-    var art = new artCollection();
-    artCollection.createModel();
+    var art = new artModel();
+    //artCollection.createModel();
     window.art = art;
 
     window.artView = new ArtView({model: art});
