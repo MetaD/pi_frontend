@@ -1,22 +1,17 @@
-// An example Backbone application contributed by
-// [Jérôme Gravel-Niquet](http://jgn.me/). This demo uses a simple
-// [LocalStorage adapter](backbone.localStorage.html)
-// to persist Backbone models within your browser.
-
-// Load the application once the DOM is ready, using `jQuery.ready`:
-
 define([
     'vender/jquery-2.1.4',
     'vender/underscore',
     'vender/backbone',
-    'js/models/art_model',
-    'js/views/art_view'
-], function ($, _, Backbone, artModel, ArtView) {
+    'js/models/badge_model',
+    'js/models/badge_collection',
+    'js/views/badge_view',
+	  'js/models/main_website_model',
+    'js/views/login_signup_view'
+], function ($, _, Backbone, badgeModel, badgeCollection, badgeView, mainPageModel, loginView) {
     "use strict";
-    var art = new artModel();
-    //artCollection.createModel();
-    window.art = art;
 
-    window.artView = new ArtView({model: art});
-    artView.render();
+   var mainPage = new mainPageModel();
+   window.mainPage = mainPage;
+   window.mainView = new loginView({model: window.mainPage});
+   window.mainView.render();
 });

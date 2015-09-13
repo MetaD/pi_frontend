@@ -4,14 +4,16 @@ define([
     '../../vender/backbone',
 ], function ($, _, Backbone) {
     "use strict";
-    var ArtModel = Backbone.Model.extend({
+    var magazineModel = Backbone.Model.extend({
       defaults: {
-        id: 0,
+		category: 'Article',
+		  title:'blabla',
         picture: 'Hey',
         alt_text: null,
-        pic_link: null
+		  info:'text'
       }
 
     });
-    return ArtModel;
+    return magazineModel;
 });
+

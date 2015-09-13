@@ -5,14 +5,14 @@ define([
     '../../vender/handlebars'
 ], function ($, _, Backbone, Handlebars) {
     "use strict";
-    var ArtView = Backbone.View.extend({
-      el: ".js--showcase-display",
-      template: Handlebars.compile(jQuery("#artwork-entry-template").html()),
+    var magazineView = Backbone.View.extend({
+      el: "#list",
+      template: Handlebars.compile(jQuery('#magazine-entry-template').html()),
       render: function() {
-        this.$el.html(this.template(this.collection.toJSON()));
+        	this.$el.html(this.template(this.collection.toJSON()));
         return this;
       }
   });
   // Our module now returns our view
-  return ArtView;
+  return magazineView;
 });

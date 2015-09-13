@@ -15,11 +15,13 @@
 		<section class="section-header">
 			<header>
 				<div class="row">
+					<a href="index.html">
 					<div class="col span-1-of-4">
-						<img src="img/black%20PI%20logo.png" alt="brand pic">
-					</div>
+						
+							<img class="brandpic" src="img/black%20PI%20logo.png" alt="brand pic">
+					</div></a>
 					<div class="col span-1-of-4">
-						<div class="header-button ">
+						<div class="index-header-button">
 							<a class="btn btn-box js--scroll-to-reg" href="#">Sign in</a>
 							<a class="btn btn-box js--scroll-to-reg" href="#">Sign up</a>
 						</div>
@@ -73,32 +75,45 @@
             <div class="row">
                 <h2>Welcome to PI ART!</h2>
             </div>
-			<div class="container formcontainer">
-				<form class="form-horizontal">
+			<div class="container formcontainer" type="text/x-handlebars-template">
+				<!-- {{#if logged_out}} -->
+				<form class="form-horizontal js--login-signup">
 				  <div class="form-group">
 					<label for="inputEmail3" class="col-sm-1 control-label"></label>
 					<div class="col-sm-10">
-					  <input type="email" class="form-control" id="inputEmail3" placeholder="Email or username">
+					  <input type="email" class="form-control js--userid-input" id="inputEmail3" placeholder="Email or username">
 					</div>
 				  </div>
 				  <div class="form-group">
 					<label for="inputPassword3" class="col-sm-1 control-label"></label>
 					<div class="col-sm-10">
-					  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+					  <input type="password" class="form-control js-password-input" id="inputPassword3" placeholder="Password">
+					</div>
+				  </div>
+				<div class="form-group js--comfirm-password">
+					<label for="inputPassword3" class="col-sm-1 control-label"></label>
+					<div class="col-sm-10">
+					  <input type="password" class="form-control" id="inputPassword3" placeholder="Confirm your password" required="required">
 					</div>
 				  </div>
 				  <div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
-					  <div class="checkbox">
+					  <div class="checkbox js--remember-me remember-me">
 						<label>
-						  <input type="checkbox"> Remember me
+						  <input type="checkbox">Remember me
 						</label>
 					  </div>
 					</div>
 				  </div>
-				  <div class="form-group">
-						<a class="btn btn-box formleft" href="#">LOGIN</a>
-						<a class="btn btn-box formright" href="#">JOIN FREE!</a>
+				  
+					  <!-- {{#if unmatched_password}}
+					  	<p class="js--alert-message">Comfirmation password does not match.</p>
+					  {{/if}} -->
+				
+				  <div class="form-group threebtn">
+						<a class="btn btn-box formleft js--login">LOGIN</a>
+					  	<a class="btn btn-box formmiddle js--register">Register</a>
+						<a class="btn btn-box formright js--joinfree" >JOIN FREE!</a>
 				  </div>
 				</form>
 				<h3>OR</h3>
@@ -109,6 +124,7 @@
 							<li><a href="#"><i class="ion-social-googleplus link-googleplus"></i></a></li>
 							<li><a href="#"><i class="ion-social-instagram link-instagram"></i></a></li>
 				</ul>
+				<!-- {{/if}} -->
 			</div>
 
         </section>
@@ -129,7 +145,7 @@
 				<div class="lab_item">
           <div class="hexagon hexagon2">
             <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-color:#a83535"></div></div></div></div>
+                <div class="hexagon-in2" style="background-color:#f4a3ff"></div></div></div></div>
 <div class="lab_item"></div>
 				<div class="lab_item"></div>
 				<div class="lab_item"></div>
@@ -137,43 +153,43 @@
 				<div class="lab_item">
           <div class="hexagon hexagon2">
             <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-color:#a83535"></div></div></div></div>
+                <div class="hexagon-in2" style="background-color:#a5afff"></div></div></div></div>
 				<div class="lab_item"></div>
 				
 								<div class="lab_item">
           <div class="hexagon hexagon2">
             <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-color:#a83535"></div></div></div></div>
+                <div class="hexagon-in2" style="background-color:#ffcc91"></div></div></div></div>
 								<div class="lab_item">
           <div class="hexagon hexagon2">
             <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-color:#a83535"></div></div></div></div>
+                <div class="hexagon-in2" style="background-color:#b9ffb3"></div></div></div></div>
 <div class="lab_item"></div>
 				<div class="lab_item"></div>
 								<div class="lab_item">
           <div class="hexagon hexagon2">
             <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-color:#a83535"></div></div></div></div>
+                <div class="hexagon-in2" style="background-color:#baf2f0"></div></div></div></div>
 								<div class="lab_item">
           <div class="hexagon hexagon2">
             <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-color:#a83535"></div></div></div></div>
+                <div class="hexagon-in2" style="background-color:#bee6ff"></div></div></div></div>
 								<div class="lab_item">
           <div class="hexagon hexagon2">
             <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-color:#a83535"></div></div></div></div>
+                <div class="hexagon-in2" style="background-color:#5a6dff"></div></div></div></div>
 								<div class="lab_item">
           <div class="hexagon hexagon2">
             <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-color:#a83535"></div></div></div></div>
+                <div class="hexagon-in2" style="background-color:#ffcf8e"></div></div></div></div>
 								<div class="lab_item">
           <div class="hexagon hexagon2">
             <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-color:#a83535"></div></div></div></div>
+                <div class="hexagon-in2" style="background-color:#87ffba"></div></div></div></div>
 								<div class="lab_item">
           <div class="hexagon hexagon2">
             <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-color:#a83535"></div></div></div></div>
+                <div class="hexagon-in2" style="background-color:#d59cff"></div></div></div></div>
 
 								<div class="lab_item">
           <div class="hexagon hexagon2">
@@ -207,18 +223,6 @@
 	</article>
 </section>
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		<section class="section-service">
 		    <div class="row">
                 <h2>Services</h2>
@@ -226,29 +230,33 @@
             </div>
             <div class="row">
                 <div class="col span_1_of_3">
-                    <div class="servicebox js--change-color">
-                        <div>
-                            <img src="img/sevice1.png">
-                        </div>
-                        <div>
-                            <p>
-                                WORK DISPLAY
-                            </p>
-                        </div>
-                    </div>
+            		<a href='showcase.html'>
+	                    <div class="servicebox js--change-color">
+	                        <div>
+	                            <img src="img/sevice1.png">
+	                        </div>
+	                        <div>
+	                            <p>
+	                                <a href="showcase.html">Gallery</a>
+	                            </p>
+	                        </div>
+	                    </div>
+                	</a>
                 
                 </div>
                 <div class="col span_1_of_3">
-                    <div class="servicebox">
-                        <div>
-                            <img src="img/sevice2.png">
-                        </div>
-                        <div>
-                            <p>
-                                MAGAZINE INFO
-                            </p>
-                        </div>
-                    </div>
+            		<a href='magzine.html'>
+	                    <div class="servicebox">
+	                        <div>
+	                            <img src="img/sevice2.png">
+	                        </div>
+	                        <div>
+	                            <p>
+	                                <a href="magzine.html">Magazine info</a>
+	                            </p>
+	                        </div>
+	                    </div>
+                	</a>
                 </div>
                 <div class="col span_1_of_3">
                     <div class="servicebox">
@@ -257,7 +265,7 @@
                         </div>
                         <div>
                             <p>
-                                ONLINE ACTIVITY
+                                <a href="aboutus.html">About us</a>
                             </p>
                         </div>
                     </div>
@@ -271,25 +279,13 @@
                         </div>
                         <div>
                             <p>
-                                ACADEMY
+                                <a href="contactus.html">Contact us</a>
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col span_1_of_3">
-                    <div class="servicebox">
-                        <div>
-                            <img src="img/sevice5.png">
-                        </div>
-                        <div>
-                            <p>
-                                BUSINESS
-                            </p>
-                        </div>
-                    </div>
-                
-                </div>
+
 				<div class="col span_1_of_3">
                     <div class="servicebox">
                         <div>
@@ -324,20 +320,17 @@
 							<div class="col-md-4">
 							<h4>Company</h4>
 
-							<div>About us</div>
-							<div>Contact us</div>
-							<div>We're hiring</div>
+								<div><a href="aboutus.html">About us</a></div>
+								<div><a href="contactus.html">Contact us</a></div>
+							<div><a href="investment.html">Investment</a></div>
 
 							</div>
 							<div class="col-md-8">
 
 								<div class="col-md-6">
 								<h4>Services</h4>
-								<div>Work display</div>
-								<div>Magazine info</div>
-								<div>Online activity</div>
-								<div>Academy</div>
-								<div>Business</div>
+									<div><a href="showcase.html">Gallery</a></div>
+									<div><a href="magzine.html">Magazine info</a></div>
 
 								</div>
 								<div class="col-md-6 js--wp-1">
@@ -360,14 +353,14 @@
 		</section>
     <div class="entry">
     </div>
-    <script id="entry-template" type="text/x-handlebars-template">
-      
+    <script id="artwork-entry-template" type="text/x-handlebars-template">
+      {{#each this}}
         <h1>{{picture}}</h1>
         <h1>{{sell_permission}}</h1>
-        <div class="body">
+        <div>
           {{sell_link}}
         </div>
-    
+    {{/each}}
     </script>
         <script src="vender/jquery-2.1.4.js"></script>
         <script src="vender/handlebars.js"></script>

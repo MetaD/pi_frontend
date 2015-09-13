@@ -4,14 +4,14 @@ define([
     '../../vender/backbone',
 ], function ($, _, Backbone) {
     "use strict";
-    var ArtModel = Backbone.Model.extend({
+    var BadgeModel = Backbone.Model.extend({
+
+      // Default attributes for the todo item.
       defaults: {
-        id: 0,
-        picture: 'Hey',
-        alt_text: null,
-        pic_link: null
+        name: 'default_badge_name',
+        progress: 0
       }
 
     });
-    return ArtModel;
+    return BadgeModel;
 });
